@@ -1,0 +1,49 @@
+extends layout.pug 
+block content
+        .books_search-tool
+            div.books_search
+                form(action="/books", method="post")
+                    input(type="text" placeholder="Search.." class="books_input" name="book_search")
+                    
+                    .books_check-box
+                        br
+                        input(type='radio', name='searchType', value='all', checked)
+                        | All
+                        br
+                        input(type='radio', name='searchType', value='title')
+                        |  Title
+                        br
+                        input(type='radio', name='searchType', value='author')
+                        |  Author
+                        br
+                        input(type='radio', name='searchType', value='language')
+                        |  Language
+                        br
+                        input(type='radio', name='searchType', value='year')
+                        |  Year
+                        br
+                    button(class="books_submit" type="submit") Search
+        .books_sort
+            form(action="/books", method="post")
+                button(class="books_sortbtn" name="button" value="AZ") From A to Z
+                button(class="books_sortbtn" name="button" value="ZA") From Z to A
+                button(class="books_sortbtn" name="button" value="AscYear") Ascending Year
+                button(class="books_sortbtn" name="button" value="DesYear") Descending Year
+        .books_content
+            -for(var i=0; i<bookArray.length;i++){
+                a(href="/book-desc/"+bookArray[i]['_id'])
+                    .books_book
+                        .books_ima
+                            img(src=bookArray[i].imageLink class="books-image")
+                        .books_desc
+                            h5 #{bookArray[i].title} (#{bookArray[i]['year']}) 
+                            p=bookArray[i].author
+                            
+            -}
+            
+        button(class="books_next") Next
+        
+        script.
+            function myFunction() {
+                document.getElementById("books_myDropdown").classList.toggle("show");
+            }

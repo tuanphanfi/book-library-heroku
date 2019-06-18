@@ -1,0 +1,243 @@
+$white: rgb(255,255,255);
+$dark-white: rgb(222,222,222);
+$red: rgb(185, 62, 62);
+$dark-red: rgb(135, 32, 32);
+
+.signIn-signUp_heading{
+    text-align: center;
+    // color: tomato;
+    margin: 50px 0 50px 0;
+}
+
+/*******************
+    * FORM
+*******************/
+
+form.signIn-signUp_form{
+    margin: 0 25%;
+    width: 50%;
+    box-sizing: border-box;
+    
+    
+    label{
+        font-size: 1.6em;
+        // margin: 0 0 120px 0;
+        font-weight: 600;
+        display: block;
+        
+        
+    }
+    
+    label.sign-up_checkbox-label{
+        font-size: 1.2em;
+        // margin: 50px 20px;
+        display: inline;
+
+    }
+
+    input[type="checkbox"]{
+        margin: 0 8px 8px 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    {
+        width: 100%;
+        line-height: 20px;
+        height: 50px;
+        font-size: 1.5em;
+        // color: tomato;
+        box-sizing: border-box;
+        margin: 0 0 30px 0 ;
+    }
+
+    
+
+    .signIn-signUp_button{
+        
+        display: block;
+        width: 100%;
+        min-height: 60px;
+        padding: 10px 20px;
+        margin: 20px 0px 100px;
+        background-color: $red;
+        color: $white;
+        border: none;
+        font-weight: 600;
+        font-size: 1.7em;
+        border-radius:  1%;
+        box-shadow: 0px 10px $dark-red;
+        box-sizing: border-box;        
+        &:hover{
+            opacity: 0.9;
+        }
+    
+        &:focus{
+            outline: none;
+            
+        }
+    
+        &:active{
+            opacity: 1;
+            box-shadow: 0px 2px $dark-red;
+            color: $dark-white;
+    
+        }
+    }
+}
+
+
+/********************
+ *SIGN UP - SIGN IN*
+*********************/
+
+
+.header_button-wrapper{
+    min-width: 10%;
+    
+    form{
+        display: inline-block;
+    }
+    button.header_button{
+        
+        padding: 10px 20px;
+        margin: 0 10px;
+        background-color: $red;
+        color: $white;
+        border: none;
+        font-weight: 600;
+        font-size: 1em;
+        border-radius:  5%;
+        box-shadow: 0px 5px $dark-red;
+        border-top: 1px solid $dark-red;
+        border-left: 1px solid $dark-red;
+        border-right: 1px solid $dark-red;    
+        &:hover{
+            opacity: 0.9;
+        }
+
+        &:focus{
+            outline: none;
+            
+        }
+
+        &:active{
+            opacity: 1;
+            box-shadow: 0px 2px $dark-red;
+            color: $dark-white;
+
+        }
+    } //button closed
+
+    
+ 
+    
+
+
+}
+
+
+/*******************
+    log-in
+*******************/
+
+.log-in_links{
+    text-align: center;
+    display: block;
+    margin: -45px 0 0px 0;
+    font-size: 1.25em;
+
+}
+
+
+/********************
+    AFTER USER LOGIN
+********************/
+//position
+
+#header_user-wrapper{
+    color: white;    
+    position: absolute;
+    top: 70px;
+
+    &:hover{
+        opacity: 0.8;
+        cursor: pointer;
+        
+        
+    }
+    
+    h1{
+        display: inline;
+        
+        font-size: 1.75em;
+        font-weight: 400;
+    }
+    
+    img.header_userAvatar{
+        display: inline;
+        margin: 0px 5px 10px 0;
+        max-width: 50px;
+        border-radius: 50%;
+        
+    }
+    
+    .header_down-arrow{
+        max-width: 20px;
+        margin: 0 5px 8px 5px;
+    }
+
+    
+    display: inline-block;
+    padding: 10px;
+    margin: auto;
+}
+
+#header_user-logout {
+    max-width: 120px;
+    // position: absolute; //DANGEROUS //SHOULD NOT USE
+    background-color: $red;
+    
+    form{
+        padding: 0;
+        margin: 0;
+        display:block;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    
+    
+}
+
+button.header_button-logout, button.header_user-logout_anchor{
+    min-width: 200px;
+    padding: 15px 18px;
+    background-color: $red;
+    color: $white;
+    font-weight: 600;
+    font-size: 1em;
+    border-radius:  1%;
+    border: 2px solid white;    
+    box-shadow: 0px 5px $dark-red;
+    &:hover{
+        opacity: 0.9;
+    }
+
+    &:focus{
+        outline: none;
+        
+    }
+
+    &:active{
+        opacity: 1;
+        box-shadow: 0px 2px $dark-red;
+        color: $dark-white;
+        margin: 1px 0 0 0;
+
+    }
+}
+
+
+

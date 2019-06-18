@@ -1,0 +1,210 @@
+/*--------------------------------CONTACT - TRAM-------------------------------------------------*/
+.contact_content {
+  margin: auto;
+  width: 100%;
+  padding-bottom: 50px;
+  /* display: block; */
+  /* padding: 20px;
+  text-align: center; */
+}
+
+.contact_map
+{
+  display: block;
+  margin: auto;
+  /* width: 80%; */
+}
+
+
+
+/*--------------------------------BOOKS - TRAM-------------------------------------------------*/
+.books_search-tool {
+    width: 100%; }
+  
+  .books_search {
+    margin: 20px 20px 20px 20px;
+    width: 60%;
+    height: 50px;
+    border: 0.5px solid grey;
+    border-radius: 15px;
+    display: inline-block; }
+  
+  .books_search input[type=text] {
+    /* float: left; */
+    padding: 6px;
+    border: 1px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    width: 60%; }
+  
+  .books_submit {
+    background-color: palevioletred;
+    border: none;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    /* margin: 20px 10px 0px 600px; */
+    cursor: pointer;
+    border-radius: 12px;
+    display: inline-block;
+    width: 20%;
+    height: 50px; }
+  
+  .books_content {
+    width: 100%;
+    height: 500px;
+    margin: auto; }
+  
+  .books_sort {
+    width: 100%;
+    height: 100px;
+    margin: 20px;
+    position: relative;
+    display: inline-block; }
+  
+  .books_sortbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    height: 50px;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    float: right;  }
+  
+  .books_sortbtn:hover, .dropbtn:focus {
+    background-color: #2980B9; }
+  
+  // .books_myDropdown {
+  //   display: none;
+  //   position: absolute;
+  //   background-color: #f1f1f1;
+  //   /* color: white; */
+  //   min-width: 160px;
+  //   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  //   z-index: 1;
+  //   float: right; }
+  
+  // .books_myDropdown a {
+  //   color: black;
+  //   padding: 12px 16px;
+  //   text-decoration: none;
+  //   display: block; }
+  
+  // .books_myDropdown a:hover {
+  //   background-color: #ddd; }
+  
+  // .show {
+  //   display: block; }
+  
+  /* #line{
+      width: 100%;
+      height: 40px;
+      margin: 50px 20px 0px 20px;
+  } */
+  .books_book {
+    width: 24%;
+    height: 240px;
+    background-color: white;
+    color:black;
+    border: solid brown 1px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0px 1% 1% 0px;
+    padding: 10px;
+    position: relative;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  .books_book:hover{opacity: 0.7; color: pink;}
+  
+  .books_ima {
+    
+    width: 100%;
+    height: 140px;
+    text-align: center; }
+  
+  .books-image {
+    width: auto;
+    max-height: 100%;
+    color: black;
+    font-size: 10px;
+    font-size: 1.25vw;
+    word-wrap: break-word;
+  }
+  
+  .books_desc {
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 80px;
+    font-size: 10px;
+    font-size: 1.25vw;
+    word-wrap: break-word; }
+  
+  /* .books_buttonnext
+  {
+      margin-top: 50px;
+      width: 100%;
+  
+  }*/
+  .books_next {
+    background-color: palevioletred;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    float: right;
+    display: block;
+    width: 20%; }
+  
+/* Meet the team */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  }
+  .column {
+  float: left;
+  width: 33.33%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  }
+  @media screen and (max-width: 650px) {
+  .column {
+  width: 100%;
+  display: block;
+  }
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: 550px;
+    margin: auto;
+    text-align: center;
+    font-family: arial; }
+  
+  .card-img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+  }
+  .container2 {
+  padding: 0 16px;
+  }
+  .container2::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+
+

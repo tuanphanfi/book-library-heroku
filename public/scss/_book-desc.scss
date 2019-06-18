@@ -1,0 +1,22 @@
+.book_container{
+    margin: 5% 5%;
+}
+
+.book-desc_img-wrapper{
+    border: 2px solid brown;
+    float: left;
+    margin: 0 20px 0 0;
+    img{
+        max-width: 300px;
+    }
+}
+
+.book-desc_wrapper{
+    // border: 2px solid black;
+    // float: right;
+    margin: 0;
+}
+
+.book-desc_row{
+    color: brown;
+}

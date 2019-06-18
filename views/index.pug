@@ -1,0 +1,62 @@
+extends layout.pug
+block content
+
+    //-Slideshow
+    section
+        .mySlides
+            div.slide
+                p “You can’t buy happiness, but you can buy books and that’s kind of the same thing.” 
+                img(src='https://images.unsplash.com/photo-1532348374062-fee19177e98f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d4086d5d36662ba037e49111340611aa&auto=format&fit=crop&w=1650&q=80')
+            div.slide
+                p "Always read something that will make you look good if you die in the middle of it."
+                img(src='https://images.unsplash.com/photo-1507738978512-35798112892c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=81010823b449bfb0f874f6c8d71a5df7&auto=format&fit=crop&w=1650&q=80')
+            div.slide
+                p "There is no friend as loyal as a book."
+                img(src='https://images.unsplash.com/photo-1526881046645-2adcd58fb232?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2206c08388e149263407a3f78820ffff&auto=format&fit=crop&w=1650&q=80')
+
+    //- h1 Home
+    
+    .home-box
+        .home-box-title 
+            h2 Best watched
+                .home-box-content
+                    -for(var i=0;i<4;i++){
+                        a(href="/book-desc/"+bookArray[i]['_id'])
+                            .home-item
+                                //- .books_ima
+                                img(src=bookArray[i]['imageLink'])
+                                //- .books_desc
+                                h5 #{bookArray[i].title} (#{bookArray[i]['year']}) 
+                                h4 Author: #{bookArray[i]['author']}
+                                
+                    -}  
+                
+    
+    .home-box
+        .home-box-title
+            h2 Top sellers
+                .home-box-content
+                    -for(var i=5;i<9;i++){
+                        a(href="/book-desc/"+bookArray[i]['_id'])
+                            .home-item
+                                img(src=bookArray[i]['imageLink'])
+                                //- .books_desc
+                                h5 #{bookArray[i].title} (#{bookArray[i]['year']}) 
+                                h4 Author: #{bookArray[i]['author']}
+
+                    -}
+        
+    script.
+        var myIndex=0;
+        carousel();
+        function carousel(){
+            var i;
+            var x = document.getElementsByClassName("slide");
+            for(i=0;i<x.length;i++){
+                x[i].style.display="none";
+            }
+            myIndex++;
+            if(myIndex>x.length){myIndex=1}
+            x[myIndex-1].style.display="block";
+            setTimeout(carousel,3000)
+        }            

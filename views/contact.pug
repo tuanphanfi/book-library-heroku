@@ -1,0 +1,57 @@
+extends layout.pug
+block content
+    div.contact_content
+        h1(style="text-align: center") Contact
+        div.contact_info
+            p(align='center') Email: medialibrary@gmail.com
+            p(align='center') Phone: +358 456 789999
+            p(align='center') Address: Mukkulakatu 19, 15140 Lahti, Finland 
+        //- div.contact_map
+        iframe(class="contact_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1933.9581613253556!2d25.662925751321662!3d61.00565038245025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468e290a0bd1c9ed%3A0x861cdfef3ef6527f!2sMukkulankatu+19%2C+15210+Lahti!5e0!3m2!1sen!2sfi!4v1539759004122" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+
+        h1#about-h1 Meet the team
+        .row
+            .column
+                    .card
+                        img(src='../userImages/chuongphoto.jpg' class="card-img img-fluid")
+                        .container2
+                                h2 CHUONG PHAM
+                                p CHUONG PHAM
+                                p chuong.pham@student.lamk.fi
+            .column
+                    .card
+                            img(src='../userImages/tuanphoto.jpg' class="card-img img-fluid")
+                            .container2
+                                h2 PHAN DOAN CHAU TUAN
+                                p TUAN PHAN
+                                p doan.phan@student.lamk.fi
+            .column
+                    .card
+                            img(src='../userImages/tramnguyen.jpg' class="card-img img-fluid")
+                            .container2
+                                h2 TRAM NGUYEN
+                                p TRAM NGUYEN
+                                p tram.nguyen@student.lamk.fi
+
+        .row
+            .column
+                    .card
+                        img(src='../userImages/na.jpg' class="card-img img-fluid")
+                        .container2
+                                h2 THAO HO
+                                p THAO HO
+                                p thao.ho@student.lamk.fi
+            .column
+                    .card
+                            img(src='../userImages/jan.jpg' class="card-img img-fluid")
+                            .container2
+                                h2 Teacher
+                                p TEACHER
+                                p Jan-Erik.Sandelin@lamk.fi
+            .column
+                    .card
+                            img(src='../userImages/sami.jpg' class="card-img img-fluid")
+                            .container2
+                                h2 Sami Heininen
+                                p SAMI HEININEN
+                                p sami.heininen@student.lamk.fi

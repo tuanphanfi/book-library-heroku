@@ -1,0 +1,138 @@
+/*--------------------------------HOME - CHUONG-------------------------------------------------*/
+#home-body{
+    border: 5px solid red;
+    height: auto;
+   
+    height: 1100px;
+    width: 1000px;
+    margin: 0 auto 0;
+    font-family:Sans-serif, "Lucia Console";
+}
+
+
+#home-header{
+    display: block;
+    position: relative;
+    border: 2px solid yellow;
+}
+
+#home-content, #home-textbox{
+    border-collapse: collapse;
+}
+
+#home-content{
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 75%;
+    border: 1px solid salmon;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.home-box{
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    height: 260px;
+    height: 33%;
+    width: auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+h1#home-h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.home-item{
+    display: inline-block;
+    position: relative;
+    height: 60%;
+    width: 20%;
+    border: 1px solid yellowgreen;
+    margin: 2%;
+    text-align: center;
+}
+
+#home-footer{
+    display: block;
+    position: relative;
+    border: 2px solid yellow;
+}
+.mySlides{
+    width:100%;
+    
+}
+.slide p{
+    z-index: 10000;
+    font-size: 28px;
+    line-height: 22px;
+    text-align:center;
+    position:absolute;
+    width: 80%;
+    margin-top: 100px;
+    color:black;
+    font-family:'Latto'
+}
+
+
+/*--------------------------------ABOUT - CHUONG-------------------------------------------------*/
+#about-body{
+    border: 5px solid red;
+    /*height: auto;*/
+    
+    height: 1100px;
+    width: 1000px;
+    margin: 0 auto 0;
+    font-family: Sans-serif, "Lucia Console";
+}
+
+.about-textbox-img p{
+    text-align:center;
+    font-size: 21px;
+    padding: 10px;
+}
+#about-content, #about-textbox{
+    border-collapse: collapse;
+}
+
+#about-header{
+    display: block;
+    position: relative;
+    border: 2px solid yellow;
+}
+
+#about-content{
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 75%;
+    border: 1px solid salmon;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-textbox{
+    display: block;
+    position: relative;
+    height:70%;
+    width: auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#about-footer{
+    display: block;
+    position: relative;
+    border: 2px solid yellow;
+}
+
+#about-h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}

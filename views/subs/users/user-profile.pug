@@ -1,0 +1,9 @@
+extends ../../layout.pug
+block content
+
+    h5 Email: #{user_email}
+    h5 Password: #{user_password}
+        
+    form(action="/view-profile" method="post")
+        input(type="text" name="password")     
+        button(type="submit") Click here

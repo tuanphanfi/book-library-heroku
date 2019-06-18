@@ -1,0 +1,24 @@
+extends layout.pug
+block content
+   .book-desc_container
+    - for(var i = 0; i < bookArray.length; i++){
+        - if(bookArray[i]['_id'] == bookId){
+            .book-desc_img-wrapper
+                img(src="../"+bookArray[i]['imageLink'], alt="book")
+            .book-desc-wrapper 
+                h4.book-desc_row Author: #{bookArray[i]['author']}
+            
+                h4.book-desc_row Title: #{bookArray[i]['title']}
+
+                h4.book-desc_row Country: #{bookArray[i]['country']} 
+                
+                h4.book-desc_row Link: #{bookArray[i]['link']}
+            
+                h4.book-desc_row Pages: #{bookArray[i]['pages']}
+
+                h4.book-desc_row Language: #{bookArray[i]['language']}
+
+                h4.book-desc_row Year: #{bookArray[i]['year']}
+        -}
+       
+    -}

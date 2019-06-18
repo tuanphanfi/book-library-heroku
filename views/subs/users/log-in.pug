@@ -1,0 +1,16 @@
+extends ../../layout.pug
+block content
+    
+    h1.signIn-signUp_heading Login to your account 
+    
+    form.signIn-signUp_form(action="/log-in", method="post")
+        label(for="mail" ) Email:
+        input(type="email" id="mail" name="user_email")
+
+        label(for="password") Password:
+        input(type="password" id="password" name="user_password")
+
+        button.signIn-signUp_button(type="submit") Login
+
+        a.log-in_links(href="/register") Register a new account
+        a.log-in_links(href="/register") Forgot your password?

@@ -1,0 +1,103 @@
+doctype html
+html(lang="en")
+    head
+        link(href='https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css', rel='stylesheet')
+        link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+        link(href='css/style.css', rel='stylesheet')
+        link(href='../css/style.css', rel='stylesheet')
+
+
+        
+    body
+
+        header.main-header
+            div.container
+                ul#menu-primary
+                    
+                h1 MEDIA LIBRARY 
+                nav#top-menu-nav
+                    ul#top-menu.nav
+                        li 
+                            a(href='/') Home
+                        li 
+                            a(href='/books') Books
+                        li
+                            a(href='/about') About
+                        li
+                            a(href='/contact') Contact
+                        li        
+                            //- after login
+                            if user_email
+                                #header_user-wrapper(onclick= 'toggleThis()')
+                                    img.header_userAvatar(src='userImages/meo.png')
+                                    h1= user_email
+                                    img.header_down-arrow(src='userImages/down-arrow.png')
+                                    #header_user-logout
+                                        //- view profile
+                                        form(action="/view-profile")
+                                            button.header_user-logout_anchor(type="submit") View profile
+                                        //- log out button
+                                        form(action="/log-out")    
+                                            button.header_button-logout(type="submit") Log Out
+                            //- login form
+                            else
+                                .header_button-wrapper
+                                    form(action="/log-in")    
+                                        button.header_button(type="submit") Log In
+                                    form(action="/register")    
+                                        button.header_button(type="submit") Register
+    
+    script.
+        var x = document.getElementById("header_user-logout");
+        x.style.display = "none"
+        var toggleThis = function() {
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    script.
+        (function (window, document, undefined) {
+        'use strict';
+        if (!('localStorage' in window)) return;
+        var nightMode = localStorage.getItem('gmtNightMode');
+        if (nightMode) {
+            document.documentElement.className += ' night-mode';
+        }
+        })(window, document);
+
+
+        (function (window, document, undefined) {
+
+            'use strict';
+
+            // Feature test
+            if (!('localStorage' in window)) return;
+
+            // Get the navigation menu
+            var nav = document.querySelector('#menu-primary');
+            if (!nav) return;
+
+            // Insert the night mode toggle
+            nav.innerHTML += '<button id="night-mode"><a role="button" href="#">Toggle Night Mode</a></button>';
+
+            // Get our newly insert toggle
+            var nightMode = document.querySelector('#night-mode');
+            if (!nightMode) return;
+
+            // When clicked, toggle night mode on or off
+            nightMode.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.documentElement.classList.toggle('night-mode');
+                if ( document.documentElement.classList.contains('night-mode') ) {
+                    localStorage.setItem('gmtNightMode', true);
+                    return;
+                }
+                localStorage.removeItem('gmtNightMode');
+            }, false);
+
+        })(window, document); 
+
+                

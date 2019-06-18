@@ -1,0 +1,113 @@
+
+/*--------------------------------HEADER - NA-------------------------------------------------*/
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+header{
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 10px 10px;
+}
+
+#top-menu li{
+    list-style: none;
+    display: inline-block;
+    a{
+        color: #fff;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: block;
+        padding: 0 25px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+#top-menu-nav{
+    padding: 10px 20px 10px 10px;
+    background:#b93e3e;
+}
+
+#top-menu li a:hover{
+    background:#fff;
+    color:tomato;
+}
+
+// nav:before{
+//     position: absolute;
+//     content: '';
+//     left:0;
+//     top:100%;
+//     border-top: 10px solid #b93e3e;
+//     border-right: 10px solid #b93e3e;
+//     border-left: 10px solid transparent;
+//     border-bottom: 10px solid transparent;
+// }
+// nav:after{
+//     position:absolute;
+//     content:'';
+//     border-top: 10px solid#b93e3e;
+//     border-left: 10px solid #b93e3e;
+//     border-right: 10px solid transparent;
+//     border-bottom: 10px solid transparent;
+//     top: 100%;
+//     right: 0;
+// }
+
+#menu-primary li a{
+    font-size: 15px;
+  }
+  
+#menu-primary {
+    list-style: none;
+    display: inline-block;
+    right:30px;
+    position:absolute;
+    ;
+  }
+  
+.night-mode body {
+    background-color: #272727;
+    color: #ffffff;
+  }
+.night-mode header{
+    background-color: #1a1a1a;
+  }
+.night-mode a {
+    color: #e5e5e5;
+  }
+
+button#night-mode{
+    background-color: rgb(185, 62, 62);
+    padding: 10px;  
+    box-shadow: 00px 5px rgb(155, 32, 32);
+    border: none;
+    border-radius: 2%;
+
+    
+    &:hover{
+        opacity: 0.8;
+    }
+
+    &:active{
+        margin: 1px 0 0 0;
+        box-shadow: 0px 2px rgb(155, 32, 32);
+        border: none;
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+    a{
+        text-decoration: none;
+        font-weight: 900;
+        color: white;
+    }
+}

@@ -1,0 +1,37 @@
+extends ../../layout.pug
+block content
+
+    h1.signIn-signUp_heading Register for a new account
+    
+    form.signIn-signUp_form(action="/register", method="post")
+        
+        label(for='name') Name:
+        input(type='text' id="name" placeholder='First and Last' name='name')
+        
+        label(for="email" ) Email:
+        input(type="email" id="email" placeholder='Name@email.com' name='email')
+        
+        label(for="pw") Password:
+        input(type="password" id="pw" name="password")
+        label(for="pw2") Re-type your password:
+        input(type="password" id="pw2" name="confirmPassword")
+
+        
+        //- label Interests:
+        //- br
+        //- input(type="checkbox" id="comedy" name="user_interest" value="comedy")
+        //- label.sign-up_checkbox-label(for="comedy") Comedy
+        //- br
+        //- input(type="checkbox" id="honor" name="user_interest" value="honor") 
+        //- label.sign-up_checkbox-label(for="honor") Honor
+        //- br
+        //- input(type="checkbox" id="fiction" name="user_interest" value="fiction") 
+        //- label.sign-up_checkbox-label(for="fiction") Fiction
+        //- br
+        //- input(type="checkbox" id="romantic" name="user_interest" value="romantic") 
+        //- label.sign-up_checkbox-label(for="romantic") Romantic
+        //- br
+        //- input(type="checkbox" id="novel" name="user_interest" value="novel") 
+        //- label.sign-up_checkbox-label(for="novel") Novel
+
+        button.signIn-signUp_button(type="submit") Register
