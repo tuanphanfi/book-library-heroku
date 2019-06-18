@@ -1,15 +1,5 @@
-// const MongoClient = require("mongodb").MongoClient;
-// const uri = "mongodb+srv://admin:Bung4mui@mycherry-lqphn.mongodb.net/test?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
 
-//   db = client.db('books');
-
-//   console.log(db)
-//   client.close();
-// });
+const port = process.env.PORT || 8000 
 
 
 //-------------------------Connect to db via Mongoose----------------------
@@ -81,6 +71,6 @@ app.use((err, req, res, next) => {
 });
 
 /*-------------------------------------------------------------------------------------------------------- */
-app.listen(8000, (req, res) => {
+app.listen(port, (req, res) => {
     console.log("Running on localhost:8000");
 })
